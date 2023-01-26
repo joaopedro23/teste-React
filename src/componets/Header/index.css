@@ -1,0 +1,137 @@
+header {
+    flex: 1;
+    background: linear-gradient(to right, rgb(83, 105, 118), rgb(41, 43, 73));
+    padding: 1% 5%;
+    box-shadow: 6px 6px 2em 8px #2b2b2d ;
+    display: flex;
+    justify-content :space-between;
+}
+
+header .HamburgueIcon {
+    display: none;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}
+
+header .HamburgueIcon:hover{
+    opacity: 0.3;
+}
+
+
+header .header_logo_contanier{
+    display: flex;
+    align-items: center;
+
+}
+
+input {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .header_Logo
+{
+    color: #2b2b2d;
+    font-weight: normal;
+    font-size:  30px;
+}
+
+header nav ul{
+list-style: none;
+display: flex;
+height: 100%;
+
+}
+
+header nav ul li {
+    margin-left: 16px;
+    display: flex;
+    align-items: center;
+}
+header nav ul li a {
+    text-decoration: none;
+    color: #000007;
+    font-weight: 400;
+    font-size: 20px;
+    transition: opacity 0.2s;
+}
+
+header nav ul li a:hover {
+    opacity: 0.6;
+}
+@media (max-width: 764px) {
+    header {
+    flex-direction: column;
+    }
+    header .HamburgueIcon{
+        display: flex;
+    }
+    header .header_logo_contanier{
+        justify-content: space-between;
+    }
+    header nav ul {
+    margin-top: 10px;
+    flex-direction: column;
+    align-items: flex-end;
+    }
+
+    header nav ul li{
+    width: 110px;
+    max-width: 30%;
+
+    margin-left: 0;
+    margin-bottom: 12px;
+
+    display: flex;
+    justify-content: flex-end;
+
+    }
+ }
+
+.InputType
+{
+   position: absolute;
+   top: 5%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+   background: #353b48;
+   border-radius: 20px;
+   padding: 10px;
+}
+.Seach-btn
+{
+    color: #00a8ff;
+    float: right;
+    width: 30px;
+    height: 35px;
+    border-radius: 25px;
+    background: #353b48;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 2s;
+}
+.Input_Lupa{
+border: none;
+background: none;
+outline: none;
+float: left;
+padding: 0;
+color:white;
+font-size: 16px;
+transition: 0.4s;
+line-height: 40px;
+width: 0px;
+}
+
+.InputType:hover > .Input_Lupa
+{
+   width: 240px;
+   padding: 0 6px;
+}
+.InputType:hover > .Seach-btn 
+{
+   background: white;
+}
+

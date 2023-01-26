@@ -1,0 +1,54 @@
+global styled
+
+*{
+  margin: 0;
+  padding: 0;
+  display: 0;
+  box-sizing: border-box;
+}
+
+body, #root
+{
+  height: 100%;
+  background: linear-gradient(to right, rgb(83, 105, 118), rgb(41, 43, 73));
+  
+
+}
+.App{
+  --background-item-cor: #2c2c2c;
+  --destaque-cor-item: #f5c53b;
+  --cor-primaria: #5899eb;
+  min-height: 100vh;
+  text-align: center;
+  
+
+}
+.movies-contanier {
+  display: grid;
+  justify-content: center;
+ 
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  padding: 30px;
+
+}
+.movie-card{
+  grid-template-columns:auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-link {
+  color: var(--cor-primaria);
+  font-weight: bold;
+  font-size: 22px;
+  margin: 20px;
+  text-decoration: none;
+  opacity: .4;
+  padding-bottom: 10px;
+
+}
+
+.nav-link.ativo{
+  opacity: 1;
+  border-bottom: solid 1px var(--cor-primaria);
+}

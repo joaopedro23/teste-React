@@ -1,0 +1,55 @@
+.movie-card{
+    display: flex;
+    flex-direction: column;
+    background-color: var(--background-item-cor);
+    max-width: 400px ;
+    border-radius: 10px;
+    margin: 20px;
+    color: #ffffff;
+    font-family: sans-serif;
+  }
+.movie-card .card-detalhe{
+    flex: 1;
+}
+.post-image{
+    padding: 100px 100px;
+    border-radius: 15px 15px 0 0 ; 
+    background-repeat: no-repeat;
+    
+}
+.fav-btn{
+    position: absolute;
+    left: 30PX;
+    padding: 10px;
+    margin: 0;
+}
+.card-detalhe{
+    text-align: left;
+    padding: 15px;
+    margin: 0;
+}
+.card-detalhe h2{   
+    opacity: .7;
+}
+.btn-detalhe{
+    background-color: var( --cor-primaria);
+    color: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    margin: 10px;
+    justify-content: center;
+    padding: 10px;
+    align-items: center;
+    text-decoration: none;
+}
+.star-detalhe{
+    color: var( --destaque-cor-item);  
+}
+.movie-card h2 h4{
+    margin: 0 0 0 10px;
+}
+
+.movie-card h4{
+    font-weight: lighter;
+    font-size: 20px;
+}
